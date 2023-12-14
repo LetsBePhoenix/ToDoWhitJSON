@@ -61,12 +61,21 @@ def renew_values():
     except:
         print("FATAL_ERROR: Unknown failre")
 
-
-def renew_db():
-    for i in range(list["ID"]):
-        if i:
-            list[str("value" + str(i))] = list[str("value" + str(i + 1))]
-            list[str("value" + str(i + 1))] = True
+# !!!NEED TO BE FIXED!!!
+#def renew_db():
+#    amount_to_del = 0
+#    for i in range(list["ID"]):
+#        if list[str("value" + str(i + 1))] == True:
+#            try:
+#                print(list)
+#                list[str("value" + str(i + 1))] = list[str("value" + str(i + 2))]
+#                list[str("value" + str(i + 2))] = True
+#                amount_to_del += 1
+#            except:
+#                print("ERROR: Problem in the sorting")
+#    for i in range(amount_to_del):
+#        list.pop(str("value" + str(list["ID"] - amount_to_del)))
+#        amount_to_del -= 1
 
 
 # ----------------------------------------------------------------------------------------------------------------------
