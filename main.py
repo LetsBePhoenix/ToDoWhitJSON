@@ -3,7 +3,7 @@ import json
 
 # Create all variables that are important to run the program
 new_open = True
-connection_string = "L:\\00_Public\\an_FB\\Projekte mit Flamur\\To_Do_List\\values.json"
+connection_string = "C:\\Users\\fbrinke\\Documents\\GitHub\\ToDoWhitJSON\\values.json"
 list = {
     "ID": 1,
     "DbV": 0.1,
@@ -70,8 +70,10 @@ def renew_db():
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-
-load_values()
+try:
+    load_values()
+except:
+    send_values()
 while True:
     eingabe = input("TEST: ")
     if eingabe == "save":
